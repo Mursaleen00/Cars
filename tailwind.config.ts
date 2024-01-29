@@ -20,11 +20,9 @@ const config: Config = {
         "theme-text-color": "#BABEC4",
         "theme-text-color-light": "#888B91",
         "theme-body-color": "#0A0A0B",
-        "theme-blur": "#374A6D80"
+        "theme-blur": "#374A6D80",
       },
-      dropShadow: {
-        "themeGreen": "drop-shadow(0px 0px 16px #02DB8A)",
-      }
+
     },
   },
   plugins: [],
