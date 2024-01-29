@@ -3,7 +3,7 @@ import React from "react";
 
 function Future() {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center md:justify-around my-20 px-2 gap-y-20 gap-x-20">
+    <div className="flex md:flex-row flex-col justify-center items-center md:justify-around my-40 px-2 gap-y-20 gap-x-20">
       <div className="relative max-w-[480px] w-full">
         <div className="px-5 absolute w-[197px] h-[104px] right-0 -bottom-12 backdrop-blur-[12px] rounded-[20px] flex flex-col justify-center text-center">
           <h1 className="text-lg md:text-xl">2.500+</h1>
@@ -27,3 +27,9 @@ function Future() {
 }
 
 export default Future;
+
+
+
+
+
+
