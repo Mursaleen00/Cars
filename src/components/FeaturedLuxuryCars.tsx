@@ -6,10 +6,10 @@ function FeaturedLuxuryCars() {
   const [state, setState] = useState("All");
   const detail = [
     {
-      name: "Tesla",
-      type: "Model X",
-      img: "/image/featured1.svg",
-      price: "$98,900",
+      name: "Porsche",
+      type: "Boxster 987",
+      img: "/image/featured4.svg",
+      price: "$126,900",
     },
     {
       name: "Tesla",
@@ -23,17 +23,18 @@ function FeaturedLuxuryCars() {
       img: "/image/featured3.svg",
       price: "$175, 900",
     },
-    {
-      name: "Porsche",
-      type: "Boxster 987",
-      img: "/image/featured4.svg",
-      price: "$126,900",
-    },
+
     {
       name: "Porsche",
       type: "Panamera",
       img: "/image/featured5.svg",
       price: "$128,900",
+    },
+    {
+      name: "Tesla",
+      type: "Model X",
+      img: "/image/featured1.svg",
+      price: "$98,900",
     },
   ];
   return (

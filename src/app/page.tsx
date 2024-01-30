@@ -3,6 +3,7 @@ import FeaturedLuxuryCars from "@/components/FeaturedLuxuryCars";
 import Future from "@/components/Future";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import SpecialOffer from "@/components/SpecialOffer";
 import TopView from "@/components/TopView";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <BrandCard />
       <TopView />
       <FeaturedLuxuryCars />
+      <SpecialOffer />
     </>
   );
 }

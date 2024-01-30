@@ -32,6 +32,7 @@ const config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "grand": "linear-gradient(180deg, rgba(10, 10, 11, 0.20) 0%, rgba(10, 10, 11, 0.50) 100%)",
       },
       colors: {
         "theme-first-color-alt": "#306AD9",
