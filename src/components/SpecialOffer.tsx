@@ -3,7 +3,7 @@ import React from "react";
 
 function SpecialOffer() {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center md:justify-around my-20 px-2 gap-y-20 gap-x-20 bg-grand relative">
+    <div className="flex md:flex-row flex-col justify-center items-center md:justify-around my-20 px-2 gap-20 relative">
       <div className="md:w-[500px] w-[300px] md:h-[500px] h-[300px] absolute rounded-full bg-theme-blur blur-[90px] -left-32 -top-80" />
       <div className="flex flex-col gap-y-10">
         <h1 className="font-semibold md:text-2xl text-xl text-theme-title-color max-w-[310px]">
