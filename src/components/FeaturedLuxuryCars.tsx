@@ -47,7 +47,7 @@ function FeaturedLuxuryCars() {
       </h1>
       <div className="flex gap-x-5 w-full justify-center items-center">
         <div
-          className={`md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center text-sm md:text-lg ${
+          className={`cursor-pointer md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center text-sm md:text-lg ${
             state == "All" ? "bg-theme-first-color" : "bg-theme-blur"
           }`}
           onClick={() => setState("All")}
@@ -55,7 +55,7 @@ function FeaturedLuxuryCars() {
           ALL
         </div>
         <div
-          className={`md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
+          className={`cursor-pointer md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
             state == "Tesla" ? "bg-theme-first-color" : "bg-theme-blur"
           }`}
           onClick={() => setState("Tesla")}
@@ -63,7 +63,7 @@ function FeaturedLuxuryCars() {
           <Image alt="" src={"/icon/tesla.svg"} width={25} height={25} />
         </div>
         <div
-          className={`md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
+          className={`cursor-pointer md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
             state == "Audi" ? "bg-theme-first-color" : "bg-theme-blur"
           }`}
           onClick={() => setState("Audi")}
@@ -71,7 +71,7 @@ function FeaturedLuxuryCars() {
           <Image alt="" src={"/icon/audi.svg"} width={25} height={25} />
         </div>
         <div
-          className={`md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
+          className={`cursor-pointer md:w-[52px] w-[48px] h-[48px] md:h-[52px] rounded-[16px] flex justify-center items-center ${
             state == "Porsche" ? "bg-theme-first-color" : "bg-theme-blur"
           }`}
           onClick={() => setState("Porsche")}
