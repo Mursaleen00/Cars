@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import {
   Select,
@@ -10,11 +10,8 @@ import {
   SelectTrigger,
 } from "@/components/ui/select";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 function Navbar() {
-  const route = usePathname();
-  console.log(route);
-
+  const [color, setColor] = useState("Home");
   return (
     <div className="h-20 flex items-center justify-between md:justify-around px-8">
       <div className="flex gap-x-2 text-lg items-center">
@@ -23,15 +20,40 @@ function Navbar() {
       </div>
       <div className="hidden md:flex">
         <ul className="flex gap-x-10 text-white font-medium text-sm md:text-lg font-pacifico">
-          <li className="text-theme-first-color cursor-pointer">Home</li>
-          <Link href={"#future"}>
-            <li className="cursor-pointer">Future</li>
+          <li
+            className={`${
+              color == "Home" && "text-theme-first-color"
+            }  cursor-pointer`}
+            onClick={() => setColor("Home")}
+          >
+            Home
+          </li>
+          <Link href={"#future"} onClick={() => setColor("Future")}>
+            <li
+              className={`${
+                color == "Future" && "text-theme-first-color"
+              } cursor-pointer`}
+            >
+              Future
+            </li>
           </Link>
-          <Link href={"#electric"}>
-            <li className="cursor-pointer">Electric Car</li>
+          <Link href={"#electric"} onClick={() => setColor("Electric")}>
+            <li
+              className={`${
+                color == "Electric" && "text-theme-first-color"
+              } cursor-pointer`}
+            >
+              Electric Car
+            </li>
           </Link>
-          <Link href={"#luxury"}>
-            <li className="cursor-pointer">Luxury Cars</li>
+          <Link href={"#luxury"} onClick={() => setColor("Luxury")}>
+            <li
+              className={`${
+                color == "Luxury" && "text-theme-first-color"
+              } cursor-pointer`}
+            >
+              Luxury Cars
+            </li>
           </Link>
         </ul>
       </div>
