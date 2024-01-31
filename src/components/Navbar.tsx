@@ -14,7 +14,7 @@ function Navbar() {
   const [color, setColor] = useState("Home");
   return (
     <div className="h-20 flex items-center justify-between md:justify-around px-8">
-      <div className="flex gap-x-2 text-lg items-center">
+      <div className="flex gap-x-2 text-lg items-center cursor-pointer">
         <Image alt="Logo" src={"/icon/logo.svg"} width={32} height={32} />
         <h1 className="text-white font-pacifico font-medium text-lg">Cars</h1>
       </div>
