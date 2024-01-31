@@ -38,7 +38,10 @@ function FeaturedLuxuryCars() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center items-center my-20 px-2 gap-y-10 gap-x-20">
+    <div
+      className="flex flex-col justify-center items-center my-20 px-2 gap-y-10 gap-x-20 scroll-mt-20"
+      id="luxury"
+    >
       <h1 className="font-semibold md:text-2xl text-xl text-theme-title-color text-center">
         Featured Luxury Cars
       </h1>
@@ -79,7 +82,7 @@ function FeaturedLuxuryCars() {
 
       <div className="p-1 flex gap-5 flex-wrap justify-center items-center w-full">
         {detail.map((items, index) => (
-          <>
+          <div key={index}>
             {state === "All" ? (
               <div className="flex rounded-[20px] w-[258px] flex-col relative h-[328px] p-6 bg-[#111213] gap-4 justify-between content-between">
                 <div className="w-[100px] h-[100px] absolute rounded-full bg-[#374A6D80] blur-[60px] bottom-[100px] left-20" />
@@ -90,12 +93,17 @@ function FeaturedLuxuryCars() {
                   <p className="text-theme-text-color text-sm">{items.type}</p>
                 </div>
                 <div className="w-full flex justify-center my-5">
-                  <Image alt="" src={`${items.img}`} width={160} height={71} />
+                  <Image
+                    alt={items.name}
+                    src={`${items.img}`}
+                    width={160}
+                    height={71}
+                  />
                 </div>
                 <h1 className="text-lg font-semibold">{items.price}</h1>
                 <div className="py-3 px-4 w-[52px] h-[44px] bg-theme-first-color-alt absolute bottom-0 right-0 rounded-ss-[16px] rounded-ee-[16px]">
                   <Image
-                    alt=""
+                    alt="shopping"
                     src={"/icon/shopping.svg"}
                     width={20}
                     height={20}
@@ -116,7 +124,7 @@ function FeaturedLuxuryCars() {
                   </div>
                   <div className="w-full flex justify-center my-5">
                     <Image
-                      alt=""
+                      alt={items.name}
                       src={`${items.img}`}
                       width={160}
                       height={71}
@@ -125,7 +133,7 @@ function FeaturedLuxuryCars() {
                   <h1 className="text-lg font-semibold">{items.price}</h1>
                   <div className="py-3 px-4 w-[52px] h-[44px] bg-theme-first-color-alt absolute bottom-0 right-0 rounded-ss-[16px] rounded-ee-[16px]">
                     <Image
-                      alt=""
+                      alt={items.name}
                       src={"/icon/shopping.svg"}
                       width={20}
                       height={20}
@@ -134,7 +142,7 @@ function FeaturedLuxuryCars() {
                 </div>
               )
             )}
-          </>
+          </div>
         ))}
       </div>
     </div>

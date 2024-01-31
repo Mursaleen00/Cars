@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import BrandCard from "@/components/BrandCard";
 import FeaturedLuxuryCars from "@/components/FeaturedLuxuryCars";
+import Footer from "@/components/Footer";
 import Future from "@/components/Future";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -18,6 +19,7 @@ export default function Home() {
       <FeaturedLuxuryCars />
       <SpecialOffer />
       <Banner />
+      <Footer />
     </>
   );
 }

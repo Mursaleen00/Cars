@@ -53,7 +53,10 @@ function BrandCard() {
     },
   ];
   return (
-    <div className="justify-center flex my-10 flex-col items-center gap-y-10">
+    <div
+      className="justify-center flex my-10 flex-col items-center gap-y-10 scroll-mt-20"
+      id="electric"
+    >
       <h1 className="font-semibold md:text-2xl text-xl text-theme-title-color text-center">
         Choose Your Electric Car <br /> Of The Porsche Brand
       </h1>
@@ -79,7 +82,7 @@ function BrandCard() {
                   </div>
                   <div className="w-full flex justify-center my-5">
                     <Image
-                      alt=""
+                      alt={items.name}
                       src={`${items.img}`}
                       width={160}
                       height={71}
@@ -88,7 +91,7 @@ function BrandCard() {
                   <div className="flex flex-wrap w-full justify-between">
                     <div className="flex gap-x-1 items-center w-[100px]">
                       <Image
-                        alt=""
+                        alt={items.name}
                         src={"/icon/dashboard.svg"}
                         width={16}
                         height={16}
@@ -99,7 +102,7 @@ function BrandCard() {
                     </div>
                     <div className="flex gap-x-1 items-center w-[100px]">
                       <Image
-                        alt=""
+                        alt={items.name}
                         src={"/icon/box.svg"}
                         width={16}
                         height={16}
@@ -110,7 +113,7 @@ function BrandCard() {
                     </div>
                     <div className="flex gap-x-1 items-center w-[100px]">
                       <Image
-                        alt=""
+                        alt={items.name}
                         src={"/icon/charging.svg"}
                         width={16}
                         height={16}
@@ -121,7 +124,7 @@ function BrandCard() {
                   <h1 className="text-lg font-semibold">{items.price}</h1>
                   <div className="py-3 px-4 w-[52px] h-[44px] bg-theme-first-color-alt absolute bottom-0 right-0 rounded-ss-[16px] rounded-ee-[16px]">
                     <Image
-                      alt=""
+                      alt={items.name}
                       src={"/icon/shopping.svg"}
                       width={20}
                       height={20}

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
@@ -6,11 +7,14 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 function Navbar() {
+  const route = usePathname();
+  console.log(route);
+
   return (
     <div className="h-20 flex items-center justify-between md:justify-around px-8">
       <div className="flex gap-x-2 text-lg items-center">
@@ -20,9 +24,15 @@ function Navbar() {
       <div className="hidden md:flex">
         <ul className="flex gap-x-10 text-white font-medium text-sm md:text-lg font-pacifico">
           <li className="text-theme-first-color cursor-pointer">Home</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Steps</li>
-          <li className="cursor-pointer">Testimonial</li>
+          <Link href={"#future"}>
+            <li className="cursor-pointer">Future</li>
+          </Link>
+          <Link href={"#electric"}>
+            <li className="cursor-pointer">Electric Car</li>
+          </Link>
+          <Link href={"#luxury"}>
+            <li className="cursor-pointer">Luxury Cars</li>
+          </Link>
         </ul>
       </div>
       <div className="md:hidden">
@@ -32,10 +42,13 @@ function Navbar() {
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
-              <SelectItem value="Home">Home</SelectItem>
-              <SelectItem value="About">About</SelectItem>
-              <SelectItem value="Steps">Steps</SelectItem>
-              <SelectItem value="Testimonial">Testimonial</SelectItem>
+              <SelectItem value="Home">
+                <Link href={"#future"}>Future</Link>
+              </SelectItem>
+              <Link href={"#electric"}>
+                <SelectItem value="Electric Car">Electric Car</SelectItem>
+              </Link>
+              <SelectItem value="Testimonial">Luxury Cars</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

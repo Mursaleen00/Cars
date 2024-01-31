@@ -56,7 +56,6 @@ function Hero() {
           );
         })}
       </div>
-      {/* <Image alt="" src={"/icon/Ellipse.svg"} width={90} height={90} className="rounded-full border-none"/> */}
       <div className="md:w-[500px] w-[300px] md:h-[500px] h-[300px] absolute rounded-full bg-theme-blur blur-[90px] right-0 -z-10 top-80" />
     </div>
   );
