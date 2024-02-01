@@ -19,7 +19,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col gap-y-3 w-full sm:w-1/2 md:w-1/4">
-          <h1>Company</h1>
+          <h1 className="text-lg font-semibold text-theme-title-color">Company</h1>
           <ul>
             <li className="cursor-pointer">About</li>
             <li className="cursor-pointer">Cars</li>
@@ -29,7 +29,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col gap-y-3 w-full sm:w-1/2 md:w-1/4">
-          <h1>Information</h1>
+          <h1 className="text-lg font-semibold text-theme-title-color">Information</h1>
           <ul>
             <li className="cursor-pointer">Request a quote</li>
             <li className="cursor-pointer">Find a dealer</li>
@@ -39,7 +39,7 @@ function Footer() {
         </div>
 
         <div className="flex flex-col gap-y-3 w-full sm:w-1/2 md:w-1/4 items-center sm:items-start">
-          <h1>Follow us</h1>
+          <h1 className="text-lg font-semibold text-theme-title-color">Follow us</h1>
           <div className="flex gap-x-3">
             <Image
               alt="Logo"
